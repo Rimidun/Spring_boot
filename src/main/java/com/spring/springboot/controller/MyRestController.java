@@ -21,31 +21,31 @@ public class MyRestController {
         return allHeroesDota;
     }
 
-//    @GetMapping("/heroes/{id}")
-//    public HeroesDota getHeroesDota(@PathVariable int id) {
-//        HeroesDota heroesDota = heroesDotaService.getHeroesDota(id);//
-//
-//        return heroesDota;
-//    }
-//
-//    @PostMapping("/heroes")
-//    public HeroesDota addNewHeroesDota(@RequestBody HeroesDota heroesDota) {
-//
-//        heroesDotaService.saveHeroesDota(heroesDota);
-//        return heroesDota;
-//    }
-//
-//    @PutMapping("/heroes")
-//    public HeroesDota updateHeroesDota(@RequestBody HeroesDota heroesDota) {
-//
-//        heroesDotaService.saveHeroesDota(heroesDota);
-//        return heroesDota;
-//    }
-//
-//    @DeleteMapping("/heroes/{id}")
-//    public String deleteHeroesDota(@PathVariable int id) {
-//
-//        heroesDotaService.deleteHeroesDota(id);
-//        return "heroes wit ID = " + id + " was deleted";
-//    }
+    @GetMapping("/heroes/{id}")
+    public HeroesDota getHeroesDota(@PathVariable int id) {
+        HeroesDota heroesDota = heroesDotaService.getHeroesDota(id);//
+
+        return heroesDota;
+    }
+
+    @PostMapping("/heroes")
+    public HeroesDota addNewHeroesDota(@RequestBody HeroesDota heroesDota) {
+
+        heroesDotaService.saveHeroesDota(heroesDota);
+        return heroesDota;
+    }
+
+    @PutMapping("/heroes")
+    public HeroesDota updateHeroesDota(@RequestBody HeroesDota heroesDota) {
+
+        heroesDotaService.saveHeroesDota(heroesDota);
+        return heroesDota;
+    }
+
+    @DeleteMapping("/heroes/{id}")
+    public String deleteHeroesDota(@PathVariable int id) {
+
+        heroesDotaService.deleteHeroesDota(id);
+        return "heroes wit ID = " + id + " was deleted";
+    }
 }

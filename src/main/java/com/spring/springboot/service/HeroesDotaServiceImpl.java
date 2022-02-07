@@ -21,23 +21,23 @@ public class HeroesDotaServiceImpl implements HeroesDotaService {
         return heroesDotaDAO.getAllHeroesDota();
     }
 
-//    @Override
-//    @Transactional
-//    public void saveHeroesDota(HeroesDota heroesDota) {
-//        heroesDotaDAO.saveHeroesDota(heroesDota);
-//    }
-//
-//    @Override
-//    @Transactional
-//    public HeroesDota getHeroesDota(int id) {
-//        return heroesDotaDAO.getHeroesDota(id);
-//    }
-//
-//    @Override
-//    @Transactional
-//    public void deleteHeroesDota(int id) {
-//        heroesDotaDAO.deleteHeroesDota(id);
-//    }
+    @Override
+    @Transactional
+    public void saveHeroesDota(HeroesDota heroesDota) {
+        heroesDotaDAO.saveHeroesDota(heroesDota);
+    }
+
+    @Override
+    @Transactional
+    public HeroesDota getHeroesDota(int id) {
+        return heroesDotaDAO.getHeroesDota(id);
+    }
+
+    @Override
+    @Transactional
+    public void deleteHeroesDota(int id) {
+        heroesDotaDAO.deleteHeroesDota(id);
+    }
 
 
 }
