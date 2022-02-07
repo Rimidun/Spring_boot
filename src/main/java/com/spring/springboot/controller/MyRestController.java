@@ -30,14 +30,12 @@ public class MyRestController {
 
     @PostMapping("/heroes")
     public HeroesDota addNewHeroesDota(@RequestBody HeroesDota heroesDota) {
-
         heroesDotaService.saveHeroesDota(heroesDota);
         return heroesDota;
     }
 
     @PutMapping("/heroes")
     public HeroesDota updateHeroesDota(@RequestBody HeroesDota heroesDota) {
-
         heroesDotaService.saveHeroesDota(heroesDota);
         return heroesDota;
     }
